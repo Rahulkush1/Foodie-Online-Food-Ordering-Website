@@ -1,0 +1,53 @@
+#footer{
+    background-color: #0B0D17;
+    display: flex;
+    flex-direction: column;
+    color: rgb(237, 238, 245);
+    margin-top: 7rem;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.footer-top{
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-header{
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+li.item {
+    padding: 0.5rem 0;
+    font-weight: 400;
+    color: #EEEFF4;
+    font-size: 14px;
+}
+
+ul.items-container {
+    list-style: none;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50%;
+    padding: 1rem;
+}
+
+.footer-bottom p{
+    color: #D9DBE1;
+    font-size: 14px;
+}
+
+img.soial-icon {
+    margin-right: 1rem;
+}
+

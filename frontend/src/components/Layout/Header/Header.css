@@ -1,0 +1,134 @@
+.home-body {
+	background-color: #00302e;
+	font-family: "Poppins", sans-serif;
+}
+nav {
+	font-family: "Poppins", sans-serif !important;
+}
+
+.nav-body {
+	background-color: #00302e !important;
+}
+.nav-link {
+	color: #fbddbb !important;
+}
+.brand {
+	/* display: flex;
+	align-items: center; */
+}
+
+.brand-logo {
+	width: 5rem;
+	/* height: 2.7rem; */
+}
+
+.brand-name {
+	font-weight: 700;
+	margin-left: 1rem;
+	color: #ffffff;
+	font-size: 1.8rem;
+}
+
+/* .nav-links ul {
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+	align-items: center;
+	margin-right: 4rem;
+} */
+
+#home-link {
+	color: #fbddbb;
+}
+#food-link {
+	color: #fbddbb;
+}
+#about-link {
+	color: #fbddbb;
+}
+#contact-link {
+	color: #fbddbb;
+}
+
+#login-link {
+	color: hsl(0, 0%, 87%);
+}
+
+#signup-link {
+	background-color: #e2b887;
+	border-radius: 7px;
+	padding: 0.5rem 2rem;
+	color: #00302e;
+	font-weight: 600;
+}
+/* .nav-link {
+	list-style: none;
+	margin: 0 1.2rem;
+} */
+
+.link-tag {
+	text-decoration: none;
+}
+
+/* HEADER */
+/* header{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center;
+} */
+/* 
+.header-left{
+    width: 50%;
+} */
+
+.speedDial {
+	position: fixed !important ;
+	z-index: 100000 !important;
+	top: 0%;
+	/* left: 0; */
+	right: 100%;
+	margin-top: 1vmax;
+}
+.speedDialIcon {
+	width: 4vmax;
+	height: 4vmax;
+	border-radius: 50%;
+	/* background-color: transparent !important; */
+	/* background-image: none !important; */
+}
+.backdrop {
+	z-index: 1;
+}
+.speedDialbox {
+	position: fixed;
+	z-index: 1;
+}
+.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+	background-color: transparent !important;
+	width: 4vmax !important;
+	height: 4vmax !important;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-width: 980px) {
+	.speedDial {
+		right: 100vmax !important;
+	}
+	.css-7dv1rb-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+		background-color: transparent !important;
+		width: 6vmax !important;
+		height: 6vmax !important;
+	}
+	.speedDialIcon {
+		width: 6vmax;
+		height: 6vmax;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.speedDial {
+		margin-top: 4vmax;
+	}
+}

@@ -1,0 +1,38 @@
+.productCartimg {
+	width: 8vmax !important;
+	height: 5vmax;
+}
+.CartItemCard {
+	width: 25vmax;
+	height: 10vmax;
+	/* z-index: -1; */
+}
+.cartRemovebtn {
+	font-size: 0.8vmax !important;
+	padding: 0.2vmax 0.7vmax !important;
+	color: var(--primary) !important;
+	outline-color: var(--primary) !important;
+}
+.CartProductName {
+	font: 600 1.4vmax "Roboto";
+}
+@media screen and (max-width: 768px) {
+	.CartItemCard {
+		width: 15vmax;
+		height: 15vmax;
+	}
+	.SubmitReview {
+		float: left;
+	}
+	.CartItemCard > div > div > div {
+		padding: 0 !important;
+		margin-top: 1vmax;
+	}
+	.CartProductName {
+		font: 600 1.8vmax "Roboto";
+	}
+	.cartRemovebtn {
+		font-size: 1vmax !important;
+		padding: 0.2vmax 0.7vmax !important;
+	}
+}

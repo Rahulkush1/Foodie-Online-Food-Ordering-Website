@@ -1,0 +1,84 @@
+.product-img {
+	width: 15rem;
+	height: 15rem;
+
+	margin: auto;
+}
+.productCard {
+	text-decoration: none;
+	color: rgb(48, 48, 48);
+	transition: all 0.5s;
+	padding-bottom: 0.5vmax;
+	/* margin-right: 2rem !important; */
+}
+
+.productCard > .card {
+	width: 15rem !important;
+	z-index: -2 !important;
+}
+
+.productCard > p {
+	font-family: "Roboto";
+	font-size: 1.2vmax;
+	margin: 1vmax 0.5vmax;
+}
+
+.productCard > .card-title {
+	font-family: "Roboto";
+	font-size: 1.2vmax;
+	margin: 1vmax 0.5vmax;
+}
+.productPrice {
+	font-family: "Roboto";
+	font: 300 0.7vmax "Roboto";
+
+	color: orangered;
+	font-weight: bold;
+}
+.restaurantName{
+	font-family: "Roboto";
+	font: 300 1vmax "Roboto";
+
+	color: orangered;
+	font-weight: bold;
+	float: inline-end;
+}
+.productCard > .card:hover {
+	transition: all 0.5s;
+
+	box-shadow: 0 0 4px rgba(15, 15, 15, 0.26);
+
+	transform: translateY(-2vmax);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+	.productCard > p {
+		font-size: 2vmax;
+	}
+
+	.productPrice {
+		font-size: 1.7vmax;
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+	.productCard > .card {
+		width: 13rem !important;
+	}
+	.product-img {
+		width: 13rem;
+		height: 13rem;
+
+		margin: auto;
+	}
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+	.productCard > .card {
+		width: 10rem !important;
+	}
+	.product-img {
+		width: 10rem;
+		height: 10rem;
+
+		margin: auto;
+	}
+}

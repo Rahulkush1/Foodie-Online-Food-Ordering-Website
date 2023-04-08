@@ -1,0 +1,65 @@
+.productHeading {
+	margin: 2vmax auto;
+	width: 15vw;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+	padding: 2vmax;
+	color: rgba(0, 0, 0, 0.678);
+	font: 500 1.5vmax "Roboto";
+	text-align: center;
+}
+
+.productListImg{
+	width: 15vmax;
+	height: 15vmax;
+}
+.sort-filter > div > div > button {
+	padding: 2px 15px;
+	border: none;
+	margin-bottom: 5%;
+}
+.activeGrid {
+	background-color: var(--primary);
+	color: white;
+	transition: all 0.5s;
+	transform: scale(1.1);
+	/* border-radius: 10px; */
+}
+.activeList {
+	background-color: var(--primary);
+	color: white;
+	transition: all 0.5s;
+
+	transform: scale(1.1);
+	/* border-radius: 10px; */
+}
+
+.NoProducts {
+	font: 400 1.3vmax "Gill Sans";
+	text-align: center;
+
+	color: rgba(0, 0, 0, 0.545);
+}
+.productsCount {
+	font: 400 1.1vmax "Roboto ";
+
+	color: rgba(0, 0, 0, 0.545);
+}
+.sort-filter{
+	height: 4vmax;
+background-color: #E1E5EA;
+padding:0.3vmax 1vmax;
+margin-bottom: 3vmax;
+}
+
+
+@media screen and (max-width:768px) {
+	.sort-filter{
+	height: 9vmax;
+
+		margin-bottom: 7vmax;
+	}
+	.productsCount{
+	font: 400 1.7vmax "Roboto ";
+
+	}
+}

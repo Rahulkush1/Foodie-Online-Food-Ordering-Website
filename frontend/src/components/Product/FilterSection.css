@@ -1,0 +1,52 @@
+.filterBox {
+	width: 15vmax;
+}
+
+.categoryBox {
+	padding: 0;
+}
+.category-link {
+	list-style: none;
+	color: rgba(0, 0, 0, 0.61);
+	font: 400 0.9vmax "Roboto";
+	margin: 0.4vmax;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.category-link:hover {
+	color: var(--primary);
+}
+.MobileFilters {
+	display: none;
+}
+.filterButton {
+	background-color: var(--primary) !important;
+	color: white;
+	border: none;
+	padding: 0.6vmax 2vmax;
+	margin-bottom: 2vmax;
+}
+.filterButton:hover {
+	color: white;
+}
+.filterButton:active {
+	color: white;
+	transition: all 0.5s;
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 993px) {
+	.MobileFilters {
+		display: contents;
+	}
+	.mainFilter {
+		display: none;
+	}
+	.filterBox {
+		width: auto;
+	}
+	.category-link {
+		font: 400 1.7vmax "Roboto";
+	}
+}

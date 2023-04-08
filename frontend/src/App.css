@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--primary: #00302e;
+	--secondary: #e2b887;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="text"]:focus,
+.input-select:focus {
+	outline: none;
+	box-shadow: none;
+	border-color: var(--secondary) !important;
+}
+.input-group {
+	/* z-index: -1; */
+}
+
+.greenColor {
+	color: green !important;
+}
+.redColor {
+	color: red !important;
+}

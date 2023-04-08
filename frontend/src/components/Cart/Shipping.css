@@ -1,0 +1,59 @@
+.shippingForm {
+	width: 80%;
+	margin: auto;
+}
+.shippingFormBox {
+	width: 30%;
+	border: 0.1px solid rgba(128, 128, 128, 0.693);
+	margin: auto;
+	padding: 2vmax 0;
+	/* margin-top: 10vmax; */
+}
+.shippingHeader {
+	width: fit-content;
+	margin: auto;
+	margin-bottom: 1vmax;
+	font: 400 2vmax "Roboto";
+	border-bottom: 1px solid rgba(128, 128, 128, 0.53);
+	padding: 1.3vmax;
+	color: rgba(0, 0, 0, 0.664);
+}
+.shippingbtn {
+	background-color: tomato !important;
+	width: 100%;
+	
+	cursor: pointer !important;
+}
+.shippingbtn:disabled {
+	background-color: rgba(255, 99, 71, 0.515) !important;
+}
+
+@media screen and (max-width: 600px) {
+	.shippingFormBox {
+		width: 100%;
+		border: 0.1px solid rgba(128, 128, 128, 0.693);
+		margin: auto;
+		padding: 2vmax 0;
+		/* margin-top: 10vmax; */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.shippingFormBox {
+		width: 100%;
+		border: 0.1px solid rgba(128, 128, 128, 0.693);
+		margin: auto;
+		padding: 2vmax 0;
+		/* margin-top: 10vmax; */
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.shippingFormBox {
+		width: 50%;
+		border: 0.1px solid rgba(128, 128, 128, 0.693);
+		margin: auto;
+		padding: 2vmax 0;
+		/* margin-top: 10vmax; */
+	}
+}

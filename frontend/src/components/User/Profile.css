@@ -1,0 +1,81 @@
+.profilePage {
+	margin-top: 6vmax !important;
+}
+.profilepic {
+	width: 20vmax;
+	height: 20vmax;
+	border-radius: 100%;
+	transition: all 0.5s;
+}
+.profilepic:hover {
+	transform: scale(1.05);
+}
+.profilePage > div > div > div > div > h4 {
+	color: black;
+	font: 400 1.2vmax "Roboto";
+}
+
+.profilePage > div > div > div > div > p {
+	color: rgba(0, 0, 0, 0.418);
+	font: 400 1vmax cursive;
+	margin: 0.2vmax;
+}
+.profilePage > div > div > div > div {
+	margin: 4vmax 0px;
+}
+.profilebtn {
+	background-color: rgba(28, 28, 28, 0.884) !important;
+	width: 70%;
+	margin-bottom: 2%;
+}
+.profilePage > div > div > div > div > a {
+	margin-bottom: 2vmax !important;
+}
+.Editbtn{
+	background-color: var(--secondary) !important;
+	width: 40%;
+
+}
+
+@media screen and (max-width: 600px) {
+	.profilePage > div > div > div > div > h4 {
+		font: 400 2.5vmax "Roboto";
+	}
+	.profilePage > div > div > div > div > p {
+		font: 400 2vmax cursive;
+		margin: 0.5vmax 0;
+	}
+	.profilePage > div > div > div {
+		text-align: center;
+	}
+	.profilebtn {
+		align-items: center;
+	}
+	.profilePage {
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.profilePage > div > div > div > div > h4 {
+		font: 400 2.5vmax "Roboto";
+	}
+	.profilePage > div > div > div > div > p {
+		font: 400 2vmax cursive;
+		margin: 0.5vmax 0;
+	}
+	.profilePage > div > div > div {
+		text-align: center;
+	}
+	/* .profilePage > div > div > div > div {
+		margin: 0;
+		margin-bottom: 2vmax;
+	} */
+
+	.profilebtn {
+		background-color: tomato;
+		width: 50%;
+		margin-bottom: 2vmax;
+		align-items: center;
+	}
+}

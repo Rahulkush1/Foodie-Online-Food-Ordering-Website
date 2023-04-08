@@ -1,0 +1,96 @@
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    background: rgba(251, 251, 251, 1);
+    padding: 3rem 1rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.brand p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.brand{
+    margin: 2rem 0;
+    padding-bottom: 4rem;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.nav-items ul {
+    list-style: none;
+}
+
+.home-nav {
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+.nav-item{
+    width: 100%;
+    padding: 0.7rem 0.5rem;
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+}
+
+.dashboard{
+    padding-top: 5rem;
+}
+
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard {
+    padding: 5rem 2.5rem;
+}
+.dashboard-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.card-container{
+    border: 0.3px solid rgba(0, 48, 46, 0.1);
+    background: rgba(255, 255, 255, 0.83);
+    max-width: 210px;
+    padding: 2rem 0.8rem;
+    border-radius: 5px;
+}
+
+.card-img {
+    height: 5rem;
+}
+
+.card-top{
+    padding: 1rem;
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.food-description{
+    color: rgba(0, 0, 0, 0.69);
+    font-size: 11px;
+}
+
+.addCart-btn{
+    color: #06E775;
+    font-weight: 500;
+    cursor: pointer;
+}
+

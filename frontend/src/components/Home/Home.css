@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.home-body {
+	background-color: #00302e;
+	font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+	padding: 6vmax;
+}
+.jumbotron {
+	width: 30vmax;
+	color: #ffffff;
+	font-size: 3vmax;
+}
+.header-img {
+	width: 30vmax !important;
+	height: 20vmax;
+	/* margin-right: 6rem; */
+}
+
+.jumbotron-subtext {
+	color: rgba(255, 255, 255, 0.74);
+	font-size: 14px;
+	padding: 1.5vmax 0;
+	padding-right: 7vmax;
+}
+
+.download-btns {
+	display: flex;
+	margin-top: 1rem;
+}
+
+.cta-btn img,
+.cta-btn {
+	margin: 0;
+}
+
+.cta-btn img {
+	margin-right: 0.8rem;
+}
+
+/* mainsection */
+/* .main {
+	position: relative;
+} */
+.main-content {
+	
+	justify-content: center;
+	align-items: center;
+	
+	/* margin-top: 8rem; */
+}
+.main-header {
+	color: rgba(255, 255, 255, 0.87);
+	margin-bottom: 1.3rem;
+	font-weight: 700;
+}
+.main-content p {
+	color: rgba(255, 255, 255, 0.83);
+}
+
+.main-subtext {
+	/* width: 45%; */
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 2.1;
+	text-align: center;
+}
+.meals-container {
+	display: flex;
+	margin: 0;
+	margin-top: 3rem;
+}
+.special-meal {
+	padding: 0 5rem;
+}
+
+.special-meal img {
+	height: 13rem;
+}
+.special-meal h3 {
+	color: rgba(255, 255, 255);
+	margin: 1.3rem;
+	font-weight: 700;
+}
+
+.special-meal p {
+	font-weight: 100;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 2;
+}
+.productImg {
+	width: 15vmax;
+	height: 15vmax;
+
+	margin: auto;
+	border-radius: 50% !important;
+}
+.special-meal-card {
+	background-color: transparent !important;
+}
+
+.special-meal > h3 {
+	font-family: "Roboto";
+	font-size: 1.2vmax;
+	margin: 1vmax 0.5vmax;
+}
+/* MAILLIST */
+.mailist-header {
+	color: rgb(251, 221, 187);
+	margin-bottom: 1.5rem;
+}
+
+.mailist-subtext {
+	color: rgba(255, 255, 255, 0.949);
+	font-weight: 400;
+	font-size: 1vmax;
+	width: 75%;
+}
+
+.mailist-section {
+	/* display: flex;
+	margin-top: 10rem;
+	align-items: center;
+	padding: 0 4rem;
+	justify-content: space-between; */
+}
+.mailist-left {
+	/* width: 50%; */
+}
+
+.email {
+	background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
+	padding: 0.5vmax 1.5vmax;
+	outline: none;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;
+	font-family: "Rubik", sans-serif;
+	margin: 0;
+	margin-right: 0.5vmax;
+}
+
+.email-btn {
+	background: rgba(251, 221, 187, 1);
+	padding: 0.5vmax 1.5vmax;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	margin: 0;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	text-transform: inherit;
+}
+
+.email::placeholder {
+	font-family: "Rubik", sans-serif;
+	font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+	.header-img {
+		width: 40vmax !important ;
+		height: 40vmax;
+		margin-top: 5vmax;
+		
+	}
+
+	.main-content-right {
+		justify-content: center;
+		text-align: center;
+	}
+	.jumbotron {
+		width: 100%;
+		font-size: 7vmax;
+	}
+	.jumbotron-subtext {
+		color: rgba(255, 255, 255, 0.74);
+		font-size: 2vmax;
+		padding: 1.5vmax 0;
+		padding-right: 7vmax;
+	}
+	.special-meal h3 {
+		color: rgba(255, 255, 255);
+		margin: 1.3rem;
+		font-weight: 700;
+	}
+	.main-header {
+		color: rgba(255, 255, 255, 0.87);
+		margin-bottom: 1.4vmax;
+		font-weight: 700;
+	}
+	.main-subtext {
+		width: 90%;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 2.1;
+	}
+	.productImg {
+		width: 20vmax;
+		height: 20vmax;
+	
+		margin: auto;
+		border-radius: 50% !important;
+	}
+	.mailist-header {
+		color: rgb(251, 221, 187);
+		margin-bottom: 1.5rem;
+	}
+	
+	.mailist-subtext {
+		color: rgba(255, 255, 255, 0.949);
+		font-weight: 400;
+		font-size: 1.7vmax;
+		width: 100%;
+	}
+	.email {
+		background: linear-gradient(0deg, #f7f7f7, #f7f7f7);
+		padding: 0.5vmax 2vmax;
+	
+		
+		margin-right: 0.5vmax;
+	}
+	
+	.email-btn {
+		background: rgba(251, 221, 187, 1);
+		padding: 0.5vmax 2vmax;
+		border: none;
+		outline: none;
+		border-radius: 5px;
+		margin-top:1vmax ;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+		text-transform: inherit;
+	}
+}
