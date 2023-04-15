@@ -14,6 +14,7 @@ import { Button } from "@mui/material";
 import CheckOutStep from "./CheckOutStep";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import validator from "validator";
 
 const Shipping = () => {
 	const navigate = useNavigate();
@@ -29,6 +30,10 @@ const Shipping = () => {
 		e.preventDefault();
 		if (phoneNo.length < 10 || phoneNo.length > 10) {
 			toast.error("Phone Number Number Should be Digit ");
+			return;
+		}
+		if (validator.isNumeric(pinCode) === false) {
+			toast.error("Enter valid Pincode! ");
 			return;
 		}
 		const country = "IN";

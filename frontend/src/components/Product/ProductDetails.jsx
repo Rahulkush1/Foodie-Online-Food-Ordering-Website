@@ -128,9 +128,16 @@ const ProductDetails = () => {
 					<div className="ProductDetails container">
 						<div className="row ProductROW">
 							<div className="col-lg-6 productCarousel text-center ">
+								{product.images && (
+									<img
+										src={`${product.images.url}`}
+										alt="item "
+										className="img-fluid productimg"
+									/>
+								)}
 								{/* <img
-									src={product.images.url}
-									alt="item image"
+									src={`${product.images.url}`}
+									alt="item "
 									className="img-fluid productimg"
 								/> */}
 								{/* <Carousel>
@@ -177,20 +184,6 @@ const ProductDetails = () => {
 										Category :{" "}
 										<span className="fw-bold">{product.category}</span>
 									</p>
-									{/* <div className="d-flex gap-4 ">
-									<div className="productDetailsIcon">
-										<Replacement className="mb-1" />
-										<p>30 days replacement</p>
-									</div>
-									<div className="productDetailsIcon">
-										<Warranty className="mb-1" />
-										<p>Warranty</p>
-									</div>
-									<div className="productDetailsIcon">
-										<LocalShippingIcon className="mb-1" />
-										<p>BazaarHub Delivered</p>
-									</div>
-								</div> */}
 								</div>
 
 								<hr />

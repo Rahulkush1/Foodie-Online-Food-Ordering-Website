@@ -1,7 +1,6 @@
 const app = require("./app");
 const dotenv = require("dotenv");
 
-
 const cloudinary = require("cloudinary").v2;
 const connectDatabse = require("./config/database");
 
@@ -15,7 +14,6 @@ const { path } = require("./app");
 dotenv.config({ path: "config/config.env" });
 
 connectDatabse();
-
 
 cloudinary.config({
 	cloud_name: process.env.CLOUDINARY_NAME,

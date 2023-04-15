@@ -51,3 +51,14 @@ img.soial-icon {
     margin-right: 1rem;
 }
 
+@media screen and (max-width:600px) {
+    img.soial-icon {
+        margin-right: 0.5rem;
+    }
+    .footer-header{
+        font-weight: 500;
+        font-size: 18px;
+        padding-bottom: 1rem;
+    }
+}
+

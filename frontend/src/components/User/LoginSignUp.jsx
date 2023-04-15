@@ -12,6 +12,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 import LockIcon from "@mui/icons-material/Lock";
 import PersonIcon from "@mui/icons-material/Person";
+import axios from "axios";
 
 const LoginSignUp = () => {
 	const dispatch = useDispatch();
@@ -21,6 +22,16 @@ const LoginSignUp = () => {
 	const { error, loading, isAuthenticated } = useSelector(
 		(state) => state.user
 	);
+
+	const [emailKey, setEmailKey] = useState("");
+
+	async function getEmailKey() {
+		const { data } = await axios.get("/api/v1/emailkey");
+		setEmailKey(data.emailKey);
+	}
+
+	const apiURL =
+		"https://emailvalidation.abstractapi.com/v1/?api_key=" + emailKey;
 
 	const loginTab = useRef(null);
 	const registerTab = useRef(null);
@@ -39,23 +50,8 @@ const LoginSignUp = () => {
 	};
 	const loginSubmit = (e) => {
 		e.preventDefault();
-		if (loginemail === "") {
-			toast.error("Please Enter your name ");
-			return;
-		}
-		if (loginpassword === "") {
-			toast.error("Please Enter your  email address ");
-			return;
-		}
-		if (validator.isEmail(email) === false) {
-			toast.error("Enter valid Email!");
-		} else if (validator.isStrongPassword(password) === false) {
-			toast.error(
-				"Password is week! Please Enter Strong Password , Contains minLowercase: 1,minUppercase: 1, minNumbers  1, minSymbols: 1"
-			);
-		} else {
-			dispatch(login(loginemail, loginpassword));
-		}
+
+		dispatch(login(loginemail, loginpassword));
 	};
 
 	const [userData, setUserData] = useState({
@@ -70,14 +66,49 @@ const LoginSignUp = () => {
 
 	const { name, email, password, phone } = userData;
 	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-	console.log(emailRegex.test(email));
 
-	const registerSubmit = (e) => {
+	const sendEmailValidationRequest = async (email) => {
+		try {
+			const response = await axios.get(apiURL + "&email=" + email);
+			return response.data;
+		} catch (error) {
+			throw error;
+		}
+	};
+
+	const [isValid, setIsValid] = useState(false);
+	const validateEmail = (email) => {
+		// Regular expression to validate email format
+		const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+		if (regex.test(email)) {
+			// Split email address into user and domain parts
+			const [user, domain] = email.split("@");
+			console.log(domain);
+
+			// Check if domain has valid MX records (indicating a real domain)
+			if (
+				[
+					"outlook.com",
+					"yahoo.com",
+					"hotmail.com",
+					"gmail.com",
+					"sistec.ac.in",
+				].includes(domain)
+			) {
+				setIsValid(true);
+			} else {
+				setIsValid(false);
+			}
+		} else {
+			setIsValid(false);
+		}
+	};
+
+	const registerSubmit = async (e) => {
 		e.preventDefault();
 		// const emailRegex = ^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$;
-		console.log(validator.isEmail(email));
-		console.log(name);
-		console.log(validator.isAlpha(name));
+		validateEmail(email);
+		console.log(isValid);
 
 		if (name === "") {
 			toast.error("Please Enter your name ");
@@ -101,7 +132,7 @@ const LoginSignUp = () => {
 			return;
 		}
 
-		if (validator.isEmail(email) === false) {
+		if (isValid === false) {
 			toast.error("Enter valid Email!");
 		} else if (
 			validator.isAlpha(name.replace(/\s/g, "")) === false ||
@@ -166,6 +197,8 @@ const LoginSignUp = () => {
 		if (isAuthenticated) {
 			navigate(redirect);
 		}
+
+		getEmailKey();
 	}, [dispatch, error, isAuthenticated, navigate, redirect]);
 
 	const switchTabs = (e, tab) => {

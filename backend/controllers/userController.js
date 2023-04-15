@@ -153,7 +153,6 @@ exports.resetPassword = catchAsyncErrors(async (req, res, next) => {
 	sendToken(user, 200, res);
 });
 
-
 //Get User Detail
 
 exports.getUserDetails = catchAsyncErrors(async (req, res, next) => {
@@ -290,4 +289,8 @@ exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
 		success: true,
 		message: "User Deleted Successfuly",
 	});
+});
+
+exports.sendEmailKey = catchAsyncErrors(async (req, res, next) => {
+	res.status(200).json({ emailKey: process.env.EMAIL_VERIFICATION_KEY });
 });

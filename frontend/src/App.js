@@ -55,12 +55,14 @@ import OrderList from "./components/Restaurant/OrderList";
 import ProcessOrder from "./components/Restaurant/ProcessOrder";
 
 import ProductReviews from "./components/Restaurant/ProductReviews";
-import NotFound from "./components/Layout/NotFound";
+// import NotFound from "./components/Layout/NotFound";
 import RestaurantRagister from "./components/User/RestaurantRagister";
 import { loadRestaurant } from "./action/restaurantAction";
 import RestaurantProfile from "./components/User/RestaurantProfile";
 import RestaurantList from "./components/Admin/RestaurantList";
 import LoginSignUp from "./components/User/LoginSignUp";
+import About from "./components/Layout/About/About";
+import Contact from "./components/Layout/Contact/Contact";
 
 function App() {
 	const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -108,6 +110,9 @@ function App() {
 				)}
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+
 					<Route path="/register" element={<LoginSignUp />} />
 					<Route path="/login" element={<LoginSignUp />} />
 					<Route path="/items" element={<Product />} />
@@ -365,7 +370,7 @@ function App() {
 							</ProtectedRoute>
 						}
 					/>
-					<Route path="*" element={<NotFound />} />
+					{/* <Route path="*" element={<NotFound />} /> */}
 				</Routes>
 				<Footer />
 			</Router>

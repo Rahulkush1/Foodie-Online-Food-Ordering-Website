@@ -13,6 +13,7 @@ const {
 	updateRole,
 	deleteUser,
 	verifyEmail,
+	sendEmailKey,
 } = require("../controllers/userController");
 const router = express.Router();
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
@@ -37,5 +38,7 @@ router
 	.get(isAuthenticatedUser, authorizeRoles("admin"), getSingleUser)
 	.put(isAuthenticatedUser, authorizeRoles("admin"), updateRole)
 	.delete(isAuthenticatedUser, authorizeRoles("admin"), deleteUser);
+
+router.route("/emailkey").get(sendEmailKey);
 
 module.exports = router;
