@@ -1,22 +1,25 @@
 {
-  "name": "foodie",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rahulkush1/MERN-Project-Foodie-.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rahulkush1/MERN-Project-Foodie-/issues"
-  },
-  "homepage": "https://github.com/Rahulkush1/MERN-Project-Foodie-#readme",
-  "dependencies": {
-    "stripe": "^11.17.0"
-  }
+	"name": "foodie",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node backend/server.js",
+		"dev": "nodemon backend/server.js",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Rahulkush1/MERN-Project-Foodie-.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Rahulkush1/MERN-Project-Foodie-/issues"
+	},
+	"homepage": "https://github.com/Rahulkush1/MERN-Project-Foodie-#readme",
+	"dependencies": {
+		"stripe": "^11.17.0"
+	}
 }
