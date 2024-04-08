@@ -128,7 +128,9 @@ nav {
 		width: 6vmax;
 		height: 6vmax;
 	}
-	
+	#signup-link {
+		margin: 10px 10px !important;
+	}
 }
 
 @media screen and (max-width: 600px) {

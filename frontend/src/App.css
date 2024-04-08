@@ -42,4 +42,8 @@ input[type="text"]:focus,
 
 .App{
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; 
+    /* height: 100vh; */
 }
