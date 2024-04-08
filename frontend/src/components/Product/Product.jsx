@@ -80,8 +80,8 @@ const Products = () => {
 		<>
 			<MetaData title="Items -- foodie" />
 			<h1 className="productHeading">Products</h1>
-			<div className="container">
-				<div className="row">
+			<div className="">
+				<div className="row mx-4 ">
 					<div className="col-lg-3">
 						<div className="mainFilter">
 							<FilterSection

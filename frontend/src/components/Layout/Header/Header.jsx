@@ -98,7 +98,7 @@ const Header = () => {
 				</div>
 			</div> */}
 			<div className="nav-body">
-				<div className="container">
+				<div className="container-fluid">
 					<nav className="navbar navbar-expand-lg bg-body-tertiary ">
 						<div className="container-fluid text-center">
 							<Link className="navbar-brand text-light text-center" to={"#"}>
@@ -125,7 +125,7 @@ const Header = () => {
 							<div
 								className="collapse navbar-collapse"
 								id="navbarSupportedContent">
-								<ul className="navbar-nav ms-auto	  mb-2 mb-lg-0">
+								<ul className="navbar-nav ms-auto mb-2 mb-lg-0">
 									<li className="nav-item">
 										<Link
 											className="nav-link active"
@@ -172,7 +172,7 @@ const Header = () => {
 										</li>
 									) : (
 										<li className="nav-item">
-											<Link className="nav-link" to="/login">
+											<Link className="nav-link" to="/login" id="signup-link">
 												Login
 											</Link>
 										</li>

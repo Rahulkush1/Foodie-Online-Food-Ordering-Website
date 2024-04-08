@@ -11,6 +11,7 @@ nav {
 }
 .nav-link {
 	color: #fbddbb !important;
+	/* font-size: 0.8vmax !important; */
 }
 .brand {
 	/* display: flex;
@@ -60,6 +61,8 @@ nav {
 	padding: 0.5rem 2rem;
 	color: #00302e;
 	font-weight: 600;
+	margin-left: auto !important;
+	margin: 0 10px !important;
 }
 /* .nav-link {
 	list-style: none;
@@ -125,6 +128,7 @@ nav {
 		width: 6vmax;
 		height: 6vmax;
 	}
+	
 }
 
 @media screen and (max-width: 600px) {

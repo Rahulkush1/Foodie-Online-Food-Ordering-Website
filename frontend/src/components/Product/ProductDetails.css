@@ -161,9 +161,61 @@
 	font: 300 0.8vmax cursive;
 } */
 
+@media screen and (min-width: 600px) and (max-width: 990px) {
+	.productDetailsBlock {
+		/* padding: 5vmax 30vmax; */
+		margin: 2vmax 10vmax;
+		
+	}	
+	.detailsBlock-3 {
+		justify-content: center;
+		width: 100%;
+		margin: auto;
+	}
+	.detailsBlock-3 > div {
+		width: 30%;
+	}
+	.detailsBlock-3 > button {
+		padding: 1vmax 2vmax;
+
+		border: 1px tomato solid;
+
+		color: tomato;
+		border-radius: 10px;
+		font-size: 1.5vmax;
+	}
+	.addToCardInput {
+		width: 40%;
+		outline: none;
+		border: none;
+	}
+	.detailsBlock-4 > .SubmitReview > button {
+		padding: 1vmax 2vmax;
+
+		font-size: 1.5vmax;
+	}
+	.SubmitReview {
+		justify-content: center;
+	}
+	.CarouselImage {
+		width: 35vmax;
+	}
+	.profileIcon {
+		width: 4vmax;
+	}
+	.reviewCard1 > div > h5 {
+		color: rgba(0, 0, 0, 0.884);
+		font: 600 1.5vmax "Roboto";
+	}
+	.reviewCard1 > div > p {
+		color: rgba(0, 0, 0, 0.445);
+		font: 300 1vmax cursive;
+	}
+}
 @media screen and (max-width: 600px) {
 	.productDetailsBlock {
 		padding: 5vmax;
+		
 	}
 	.detailsBlock-3 {
 		justify-content: center;
