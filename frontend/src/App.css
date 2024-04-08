@@ -39,3 +39,7 @@ input[type="text"]:focus,
 .redColor {
 	color: red !important;
 }
+
+.App{
+	overflow: hidden;
+}

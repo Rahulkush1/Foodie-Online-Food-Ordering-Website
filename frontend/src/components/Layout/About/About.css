@@ -9,14 +9,17 @@
 	display: grid;
 	grid-template-columns: 4fr 4fr;
 	position: fixed;
+	background-color: #00302e ;
+
 }
 
 .aboutSectionGradient {
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to bottom right,
 		var(--primary),
 		rgb(74, 137, 189)
-	);
+	); */
+	/* background-color: #00302e ; */
 }
 
 .aboutSectionContainer {

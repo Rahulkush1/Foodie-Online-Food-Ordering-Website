@@ -125,7 +125,7 @@ const ProductDetails = () => {
 			) : (
 				<>
 					<MetaData title={`${product.name} -- foodie`} />
-					<div className="ProductDetails container">
+					<div className="ProductDetails">
 						<div className="row ProductROW">
 							<div className="col-lg-6 productCarousel text-center ">
 								{product.images && (

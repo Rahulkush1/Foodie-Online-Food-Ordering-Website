@@ -9,8 +9,30 @@
 	font-family: "Poppins", sans-serif;
 }
 
+.bg-image{
+	height: 90vh;
+    filter: blur(3px);
+	opacity: 0.6;
+
+}
+.bg-text{
+	color: #fff !important;
+	/* font-size: 2vmax !important; */
+
+}
 .main-container {
-	padding: 6vmax;
+	/* padding: 6vmax; */
+}
+.main-section-1{
+	margin: 4vmax 4vmax;
+}
+.herovideo{
+
+    /* -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(3px); */
 }
 .jumbotron {
 	width: 30vmax;
@@ -75,6 +97,7 @@
 	display: flex;
 	margin: 0;
 	margin-top: 3rem;
+	justify-content: space-around;
 }
 .special-meal {
 	padding: 0 5rem;
@@ -113,6 +136,8 @@
 }
 /* MAILLIST */
 .mailist-header {
+
+	font-size: 2vmax !important;
 	color: rgb(251, 221, 187);
 	margin-bottom: 1.5rem;
 }
@@ -161,6 +186,10 @@
 .email::placeholder {
 	font-family: "Rubik", sans-serif;
 	font-weight: 400;
+}
+
+.contact-section{
+	margin-top: 7vmax;
 }
 
 @media screen and (max-width: 768px) {

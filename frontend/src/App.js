@@ -63,8 +63,12 @@ import RestaurantList from "./components/Admin/RestaurantList";
 import LoginSignUp from "./components/User/LoginSignUp";
 import About from "./components/Layout/About/About";
 import Contact from "./components/Layout/Contact/Contact";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 
 function App() {
+	AOS.init();
 	const { isAuthenticated, user } = useSelector((state) => state.user);
 
 	const [stripeApiKey, setStripeApiKey] = useState("");

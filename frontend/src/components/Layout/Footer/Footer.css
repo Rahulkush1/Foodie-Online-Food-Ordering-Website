@@ -1,64 +1,78 @@
-#footer{
-    background-color: #0B0D17;
-    display: flex;
-    flex-direction: column;
-    color: rgb(237, 238, 245);
-    margin-top: 7rem;
-    font-family: 'Inter', sans-serif;
-    
-}
 
-.footer-top{
-    padding: 4rem 2rem;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    font-weight: 400;
-    font-size: 14px;
-}
 
-.footer-header{
-    font-weight: 500;
-    font-size: 18px;
-    padding-bottom: 1rem;
-}
 
-li.item {
-    padding: 0.5rem 0;
-    font-weight: 400;
-    color: #EEEFF4;
-    font-size: 14px;
-}
-
-ul.items-container {
-    list-style: none;
-}
-
-.footer-bottom {
+footer {
+    margin-top: 2vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 50%;
-    padding: 1rem;
-}
-
-.footer-bottom p{
-    color: #D9DBE1;
-    font-size: 14px;
-}
-
-img.soial-icon {
-    margin-right: 1rem;
-}
-
-@media screen and (max-width:600px) {
-    img.soial-icon {
-        margin-right: 0.5rem;
-    }
-    .footer-header{
-        font-weight: 500;
-        font-size: 18px;
-        padding-bottom: 1rem;
-    }
-}
+    overflow: auto;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1vmax;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: "Roboto";
+    color: #eb4034;
+  }
+  .midFooter > p {
+    max-width: 60%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.5vmax;
+  }
+  
+  .rightFooter > a:hover {
+    color: #eb4034;
+  }
 
