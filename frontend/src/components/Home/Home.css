@@ -200,6 +200,18 @@
 		
 	}
 
+	.bg-image{
+		height: 60vh;
+		filter: blur(2px);
+		opacity: 0.6;
+	
+	}
+	.bg-text{
+		color: #fff !important;
+		/* font-size: 2vmax !important; */
+	
+	}
+
 	.main-content-right {
 		justify-content: center;
 		text-align: center;

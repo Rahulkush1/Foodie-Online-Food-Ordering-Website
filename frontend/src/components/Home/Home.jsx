@@ -143,45 +143,36 @@ const Home = () => {
                         <div className="row g-5">
                           {products &&
                             products.map((product, index) => {
-                              return (
-                                // <div className="col-lg-4 col-md-6">
-                                // 	<div className="special-meal">
-                                // 		<img
-                                // 			src={product.images.url}
-                                // 			alt="food"
-                                // 			className=" productImg "
-                                // 		/>
-                                // 		<h3>{product.name}</h3>
-                                // 		<p>{product.description}</p>
-                                // 	</div>
-                                // </div>
+  
 
-                                <div className="col-lg-4  col-sm-6">
-                                  <Link
-                                    className="text-decoration-none"
-                                    to={`/item/${product._id}`}
-                                  >
-                                    <div
-                                      class="card border-0 special-meal-card"
-                                      style={{ width: "18rem;" }}
+                                return   (
+                                  <div className="col-lg-4  col-sm-6 ">
+                                    <Link
+                                      className="text-decoration-none"
+                                      to={`/item/${product._id}`}
                                     >
-                                      <img
-                                        src={product.images.url}
-                                        class="card-img-top productImg"
-                                        alt="..."
-                                      />
-                                      <div class="card-body">
-                                        <h5 class="card-title text-light">
-                                          {product.name}
-                                        </h5>
-                                        <p class="card-text">
-                                          {product.description}
-                                        </p>
+                                      <div
+                                        class="card border-0 special-meal-card"
+                                        style={{ width: "18rem;" }}
+                                      >
+                                        <img
+                                          src={product.images.url}  
+                                          class="card-img-top productImg"
+                                          alt="..."
+                                        />
+                                        <div class="card-body">
+                                          <h5 class="card-title text-light">
+                                            {product.name}
+                                          </h5>
+                                          <p class="card-text">
+                                            {product.description}
+                                          </p>
+                                        </div>
                                       </div>
-                                    </div>
-                                  </Link>
-                                </div>
-                              );
+                                    </Link>
+                                  </div>
+                                );
+                              
                             })}
                         </div>
                       </div>
