@@ -11,9 +11,12 @@
 
 .bg-image{
 	height: 90vh;
-    filter: blur(3px);
-	opacity: 0.6;
+    /* filter: blur(3px);
+	opacity: 0.6; */
 
+}
+.backgroud_image{
+	width: 100%;
 }
 .bg-text{
 	color: #fff !important;
@@ -192,6 +195,8 @@
 	margin-top: 7vmax;
 }
 
+
+
 @media screen and (max-width: 768px) {
 	.header-img {
 		width: 40vmax !important ;
@@ -199,13 +204,13 @@
 		margin-top: 5vmax;
 		
 	}
-
 	.bg-image{
 		height: 60vh;
-		filter: blur(2px);
-		opacity: 0.6;
+		/* filter: blur(2px); */
+		/* opacity: 0.6; */
 	
 	}
+
 	.bg-text{
 		color: #fff !important;
 		/* font-size: 2vmax !important; */
@@ -237,16 +242,20 @@
 		font-weight: 700;
 	}
 	.main-subtext {
-		width: 90%;
+		width: 100%;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 2.1;
 	}
-	.productImg {
-		width: 20vmax;
-		height: 20vmax;
+	/* .special-meal-card {
+		width: 15rem !important;
+	} */
 	
-		margin: auto;
+	.productImg {
+			/* width: 20vmax;
+			height: 20vmax; */
+	
+		/* margin: auto; */
 		border-radius: 50% !important;
 	}
 	.mailist-header {

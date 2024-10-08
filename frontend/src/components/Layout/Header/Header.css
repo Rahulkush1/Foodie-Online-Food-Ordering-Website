@@ -8,6 +8,7 @@ nav {
 
 .nav-body {
 	background-color: #00302e !important;
+	z-index: 1;
 }
 .nav-link {
 	color: #fbddbb !important;

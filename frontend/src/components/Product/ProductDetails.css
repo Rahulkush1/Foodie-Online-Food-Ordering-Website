@@ -160,6 +160,23 @@
 	color: rgba(0, 0, 0, 0.445);
 	font: 300 0.8vmax cursive;
 } */
+.swiper {
+	width: 65%;
+	/* height: 300px; */
+	/* position: absolute; */
+	/* left: 50%;
+	top: 50%; */
+  }
+  
+  .swiper-slide {
+	background-position: center;
+	background-size: cover;
+  }
+  
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+  }
 
 @media screen and (min-width: 600px) and (max-width: 990px) {
 	.productDetailsBlock {

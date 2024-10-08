@@ -18,6 +18,8 @@ import MetaData from "../Layout/MetaData";
 import { Link } from "react-router-dom";
 import HeroSlider from "./HeroSlider";
 import video from "../../images/video1.mp4";
+import bg from "../../images/bg.png";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Home = () => {
   const special_meals = [
@@ -63,19 +65,24 @@ const Home = () => {
         <Loader />
       ) : (
         <>
-          <MetaData title="Foodie" />
-
+          {/* <HeroSlider /> */}
           <div>
             <div className="home-body">
               <div className="main-container">
-                <HeroSlider />
+                {/* <HeroSlider /> */}
+                <div className="text-center">
+                  <img
+                    src={bg}
+                    alt="backgroud_image"
+                    className="img-fluid backgroud_image"
+                  />
+                </div>
                 <div
                   className="main-section-1"
                   data-aos="fade-right"
                   data-aos-offset="500"
                   data-aos-delay="50"
-                  data-aos-easing="ease-in-sine"
-                >
+                  data-aos-easing="ease-in-sine">
                   <header>
                     <div className="row ">
                       <div className="col-lg-9 col-md-9 main-content-left">
@@ -124,13 +131,7 @@ const Home = () => {
                       our meals and swift delivery to what ever location within
                       Ilorin.
                     </p>
-                    <div
-                      className="meals-container"
-                      data-aos="flip-up"
-                      data-aos-offset="500"
-                      data-aos-delay="50"
-                      data-aos-easing="ease-in-sine"
-                    >
+                    <div className="meals-container">
                       {/* {products &&
 										products.map((product, index) => (
 											<Product product={product} key={index} />
@@ -140,39 +141,38 @@ const Home = () => {
 											<featureProducts product={product} key={index} />
 										))} */}
                       <div>
-                        <div className="row g-5">
+                        <div className="row gx-5">
                           {products &&
                             products.map((product, index) => {
-  
-
-                                return   (
-                                  <div className="col-lg-4  col-sm-6 ">
-                                    <Link
-                                      className="text-decoration-none"
-                                      to={`/item/${product._id}`}
-                                    >
-                                      <div
-                                        class="card border-0 special-meal-card"
-                                        style={{ width: "18rem;" }}
-                                      >
-                                        <img
-                                          src={product.images.url}  
-                                          class="card-img-top productImg"
-                                          alt="..."
-                                        />
-                                        <div class="card-body">
-                                          <h5 class="card-title text-light">
-                                            {product.name}
-                                          </h5>
-                                          <p class="card-text">
-                                            {product.description}
-                                          </p>
-                                        </div>
+                              return (
+                                <div className=" col-6 col-lg-4  col-sm-6 ">
+                                  <Link
+                                    className="text-decoration-none"
+                                    to={`/item/${product._id}`}>
+                                    <div
+                                      class="card border-0 special-meal-card"
+                                      style={{ width: "18rem;" }}
+                                      data-aos="flip-left"
+                                      data-aos-duration="2000"
+                                      data-aos-easing="ease-out-cubic">
+                                      <img
+                                        src={product.images.url}
+                                        class="card-img-top productImg"
+                                        alt="..."
+                                      />
+                                      <div class="card-body">
+                                        <h5 class="card-title text-light">
+                                          {product.name}
+                                        </h5>
+                                        <p class="btn btn-success">
+                                          Order now{" "}
+                                          <ArrowForwardIosIcon className="fw-bold" />
+                                        </p>
                                       </div>
-                                    </Link>
-                                  </div>
-                                );
-                              
+                                    </div>
+                                  </Link>
+                                </div>
+                              );
                             })}
                         </div>
                       </div>
@@ -183,8 +183,7 @@ const Home = () => {
                     className="contact-section"
                     data-aos="fade-right"
                     data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                  >
+                    data-aos-easing="ease-in-sine">
                     <div className="mailist-section mx-5">
                       <div className="row align-items-center">
                         <div className="col-lg-8 ">
@@ -198,12 +197,11 @@ const Home = () => {
                             </p>
                           </div>
                         </div>
-                        <div className="col-lg-4 ">
+                        <div className="col-lg-4 mb-4 mt-0">
                           <input
                             type="text"
                             placeholder="gregphillips@gmail.com"
-                            className="email"
-                          ></input>
+                            className="email"></input>
                           <button className="email-btn">Get notified</button>
                         </div>
                       </div>
