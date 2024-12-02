@@ -17,6 +17,7 @@
 }
 .backgroud_image{
 	width: 100%;
+	/* height: 70%; */
 }
 .bg-text{
 	color: #fff !important;
@@ -124,7 +125,6 @@
 .productImg {
 	width: 15vmax;
 	height: 15vmax;
-
 	margin: auto;
 	border-radius: 50% !important;
 }

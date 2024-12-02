@@ -18,7 +18,9 @@ import MetaData from "../Layout/MetaData";
 import { Link } from "react-router-dom";
 import HeroSlider from "./HeroSlider";
 import video from "../../images/video1.mp4";
-import bg from "../../images/bg.png";
+// import bg from "../../images/bg.png";
+import bg from "../../images/bg_1.png";
+
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const Home = () => {
@@ -80,8 +82,8 @@ const Home = () => {
                 <div
                   className="main-section-1"
                   data-aos="fade-right"
-                  data-aos-offset="500"
-                  data-aos-delay="50"
+                  data-aos-offset="100"
+                  data-aos-delay="20"
                   data-aos-easing="ease-in-sine">
                   <header>
                     <div className="row ">
@@ -145,7 +147,7 @@ const Home = () => {
                           {products &&
                             products.map((product, index) => {
                               return (
-                                <div className=" col-6 col-lg-4  col-sm-6 ">
+                                <div className=" col-6 col-lg-3  col-sm-4 col-md-3">
                                   <Link
                                     className="text-decoration-none"
                                     to={`/item/${product._id}`}>
@@ -153,12 +155,13 @@ const Home = () => {
                                       class="card border-0 special-meal-card"
                                       style={{ width: "18rem;" }}
                                       data-aos="flip-left"
+                                      data-aos-offset="200"
                                       data-aos-duration="2000"
                                       data-aos-easing="ease-out-cubic">
                                       <img
-                                        src={product.images.url}
+                                        src={product.images[0].url}
                                         class="card-img-top productImg"
-                                        alt="..."
+                                        alt="productimage"
                                       />
                                       <div class="card-body">
                                         <h5 class="card-title text-light">
